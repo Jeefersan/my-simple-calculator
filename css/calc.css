@@ -39,6 +39,10 @@ button {
   font-size: 1.4rem;
 }
 
+#btn-zero {
+  background-color: mistyrose;
+}
+
 #display-calc {
   display: flex;
   padding-right: 1rem;
