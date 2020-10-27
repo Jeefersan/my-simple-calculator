@@ -128,7 +128,8 @@ function clear() {
     (equation.b = null),
     (equation.result = null),
     (equation.operator = "");
-  updateDisplay(0);
+  displayValue = 0;
+  updateDisplay(displayValue);
   updateDisplayOps(true);
 }
 
@@ -151,7 +152,7 @@ function setupBtns() {
 function inputKey(e) {
   let key = document.querySelector(`button[data-key="${e.key}"]`);
   console.log(e);
-  return e.keyCode == "/" || e.key == "*" || e.key == "+" || e.key == "-"
+  return e.key == "/" || e.key == "*" || e.key == "+" || e.key == "-"
     ? getInputOperator(key.getAttribute("data-key"))
     : e.key === "Enter"
     ? calculate()

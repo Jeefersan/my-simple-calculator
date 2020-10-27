@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/calc.css" />
-    <title>Simple Calculator</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/calc.css" />
+  <link href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Simple Calculator</title>
+</head>
+
+<body>
+  <div id="container">
     <div id="main-container">
       <div id="display-container">
         <div id="display-styled-container">
@@ -79,10 +82,20 @@
           </button>
         </div>
         <div class="btn-div">
-          <button id="btn-equals" data-key="Enter" value="=">=</button>
+          <button id="btn-equals" data-key="Enter" value="="><strong>=</strong></button>
         </div>
       </div>
     </div>
-  </body>
-  <script src="js/calc.js"></script>
+  </div>
+
+
+  <div class="footer">
+    <a href="https://github.com/Jeefersan/my-simple-calculator">
+      <img src="images/GitHub-Mark-120px-plus.png" alt="">
+      <p>View on Github</p>
+    </a>
+  </div>
+</body>
+<script src="js/calc.js"></script>
+
 </html>
